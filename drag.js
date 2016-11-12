@@ -13,5 +13,8 @@ function drag(id){
 			obj.style.top = ev.pageY-disY;
 		}
 	}
-	
+	document.onmousemove =function(){
+		obj.style.left= ev.clientX-disX;
+		obj.style.top = ev.clientY-disY;
+	}
 }
